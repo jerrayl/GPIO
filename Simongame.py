@@ -77,7 +77,8 @@ while input_state==4:
     GPIO.output(mapping[randint(0,3)],randint(0,1))
     sleep(random()/2)
 
-#Reset 
+#Reset
+sleep(5)
 input_state=4
 GPIO.output(35,0)
 GPIO.output(36,0)
