@@ -1,3 +1,4 @@
+#Import Module
 import RPi.GPIO as GPIO
 
 #Initialize GPIO
@@ -12,8 +13,8 @@ GPIO.setup(6, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
 GPIO.setup(19, GPIO.OUT)
 
-#Poll for button Press
-while True;
+#Poll for button press
+while True:
     if GPIO.input(23)==1:
         GPIO.output(5,1)
     else:
